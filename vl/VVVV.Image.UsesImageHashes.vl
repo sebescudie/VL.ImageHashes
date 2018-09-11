@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Version="0.93">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
+  <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
+  <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
+    <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.Image" BordersChecked="false" CanvasType="FullCategory">
+      <!--
+
+    ************************ UsesImageHashes ************************
+
+-->
+      <Node Name="UsesImageHashes" Bounds="153,200" Id="TSttkfeJHQSN5gkEF54G9o">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Patch" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="CzjSvRY5dvXQDxmAOA8mZj">
+          <Patch Id="ESJZDDS0I02LAWDOx9RJVV" Name="Create" />
+          <Patch Id="OkqGvJfa3PDOppp4PFQghD" Name="Update" />
+          <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi" CanvasType="Group">
+            <Node Bounds="273,241,239,157" Id="Ick6m2JVdZWQFbEJpb3BfU">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <Pin Id="By049pMQky9NLjnAGg3a9e" Name="Force" Kind="InputPin" />
+              <Pin Id="GyScbxQXrsLQIoVLsBBQp9" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="SXCGW8KceMiO0nYRnvMgbv" Name="Has Changed" Kind="OutputPin" />
+              <Patch Id="G3L9RumWQaHN3C8LoCDJvq" ManuallySortedPins="true">
+                <Patch Id="BHprReRQcaAOfH3HR4jRBN" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="DDxmacjKy4ONmS5L3QVdyQ" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="285,277,69,13" Id="E7Ff0JL0zAGONQ4l3P6jyr">
+                  <p:NodeReference LastCategoryFullName="Image.ImageHashes" LastSymbolSource="VVVV.Image.ImageHashes.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="AverageHash" />
+                  </p:NodeReference>
+                  <Pin Id="UpNSkm3Wh0kPC7aB8N3c3M" Name="Path" Kind="InputPin" />
+                  <Pin Id="UW9qaKvheTMLpD310TcpwD" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="431,273,69,13" Id="V2bii3NOhHWNBh81TNQr3O">
+                  <p:NodeReference LastCategoryFullName="Image.ImageHashes" LastSymbolSource="VVVV.Image.ImageHashes.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="AverageHash" />
+                  </p:NodeReference>
+                  <Pin Id="BfXjNWRGrwVNbBnW7HtErX" Name="Path" Kind="InputPin" />
+                  <Pin Id="KkYCQv8IjAbQJBlbtzvSmK" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="342,323,84,13" Id="T1R4LVwxtcuOC8osCeCnVC">
+                  <p:NodeReference LastCategoryFullName="Image.ImageHashes" LastSymbolSource="VVVV.Image.ImageHashes.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="CompareHashes" />
+                  </p:NodeReference>
+                  <Pin Id="V6rGYCvCHroPxjdDUHMoGq" Name="Hash 1" Kind="InputPin" />
+                  <Pin Id="DgclmGgK67lPABshV3soOV" Name="Hash 2" Kind="InputPin" />
+                  <Pin Id="E3JfyARD5euM1zwWAePWna" Name="Result" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="TV4tipSUly1OuDaeBRjU00" Bounds="289,247" Alignment="Top" />
+              <ControlPoint Id="MXScBVA7B3pLsuAaQqptNV" Bounds="435,247" Alignment="Top" />
+              <ControlPoint Id="Cutfdj3TNxDN2fxdPCsZsq" Bounds="346,392" Name="Similarity" Alignment="Bottom" />
+              <ControlPoint Id="Ku85KVgp1N4LR9ZBqAdhXs" Bounds="436,392" Name="Image 2" Alignment="Bottom" />
+              <ControlPoint Id="NQd0bJpbFgiP4FFd87Uxg7" Bounds="291,392" Name="Image 1" Alignment="Bottom" />
+            </Node>
+            <Pad Id="MWVpIjCZ0MYQEyi9T7kCJt" Comment="" Bounds="288,148,285,19" ShowValueBox="true" isIOBox="true" Value="{&quot;_path&quot;:&quot;..\\assets\\doge.jpg&quot;}">
+              <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="BiN9Lsjg2jNMOyoRhe7HOg" Comment="" Bounds="434,196,329,20" ShowValueBox="true" isIOBox="true" Value="{&quot;_path&quot;:&quot;..\\assets\\dogelikeaboss.jpg&quot;}">
+              <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="MqeL2dQDmFwPrBMBAsN1jQ" Comment="Force" Bounds="192,185,40,19" ShowValueBox="true" isIOBox="true" Value="false">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="IxYjlQ0a3JRN0WJ7OvwyYX" Comment="Image 1" Bounds="238,479,18,19" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="MEAYIgoq4NKLXhR2xW09z7" Comment="Similarity" Bounds="484,479,33,19" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="Q1ZoaJxzR2cO5bRW8W6n6e" Comment="Image 2" Bounds="358,479,18,19" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="S2Q47kxv83pQBs9pcOOZJZ" Bounds="224,542,180,62" ShowValueBox="true" isIOBox="true" Value="&quot;For some reason the IOBoxes will display 0 instead of the actual hash.&quot;">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="KslqxTxRQwEO09tLa054hn" Bounds="478,531,142,22" ShowValueBox="true" isIOBox="true" Value="&quot;This goes from 0 to 1&quot;">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+          </Canvas>
+          <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
+            <Fragment Id="MRFnVwHDf0WOO7H3jKbCxI" Patch="ESJZDDS0I02LAWDOx9RJVV" Enabled="true" />
+            <Fragment Id="PulIQZQ5YLtPp6C2yvbTNE" Patch="OkqGvJfa3PDOppp4PFQghD" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="OGDjvLXQXEiLqfF60LGbVA" Ids="TV4tipSUly1OuDaeBRjU00,UpNSkm3Wh0kPC7aB8N3c3M" />
+          <Link Id="KUj7RCMoOtkLj5OMg4GQtw" Ids="MWVpIjCZ0MYQEyi9T7kCJt,TV4tipSUly1OuDaeBRjU00" />
+          <Link Id="NY30cQuBQp7MkAxfjG49Sf" Ids="MXScBVA7B3pLsuAaQqptNV,BfXjNWRGrwVNbBnW7HtErX" />
+          <Link Id="StD2vTyII1VOTCGMgoooRo" Ids="BiN9Lsjg2jNMOyoRhe7HOg,MXScBVA7B3pLsuAaQqptNV" />
+          <Link Id="BlJD2CKIEEnP3OkjvcWTrf" Ids="UW9qaKvheTMLpD310TcpwD,V6rGYCvCHroPxjdDUHMoGq" />
+          <Link Id="KYkdQVUq8nZN1dy3oHgXBM" Ids="KkYCQv8IjAbQJBlbtzvSmK,DgclmGgK67lPABshV3soOV" />
+          <Link Id="AaMhofATiTYNuvA8EXQs69" Ids="E3JfyARD5euM1zwWAePWna,Cutfdj3TNxDN2fxdPCsZsq" />
+          <Link Id="RDu8xvMschdQaY9WNSPt8e" Ids="MqeL2dQDmFwPrBMBAsN1jQ,By049pMQky9NLjnAGg3a9e" />
+          <Link Id="BKPut8LkVXTPQ50E1H3MIF" Ids="KkYCQv8IjAbQJBlbtzvSmK,Ku85KVgp1N4LR9ZBqAdhXs" />
+          <Link Id="JxWjwlRqPSWNle2reGBKGQ" Ids="UW9qaKvheTMLpD310TcpwD,NQd0bJpbFgiP4FFd87Uxg7" />
+          <Link Id="Rylv8uyFZEtNwmnBGo9VB9" Ids="NQd0bJpbFgiP4FFd87Uxg7,IxYjlQ0a3JRN0WJ7OvwyYX" />
+          <Link Id="TtYBPXwFYXdNjv61iCt5bV" Ids="Cutfdj3TNxDN2fxdPCsZsq,MEAYIgoq4NKLXhR2xW09z7" />
+          <Link Id="EcT1g4D7vHIOdjwGJ8mnSH" Ids="Ku85KVgp1N4LR9ZBqAdhXs,Q1ZoaJxzR2cO5bRW8W6n6e" />
+        </Patch>
+      </Node>
+    </Canvas>
+  </Patch>
+  <DocumentDependency Id="FvtTfzm46xAOQpl5byvbkJ" Location="./VVVV.Image.ImageHashes.vl" />
+</Document>
