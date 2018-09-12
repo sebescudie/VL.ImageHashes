@@ -25,14 +25,14 @@
     ************************ AverageHash ************************
 
 -->
-            <Node Name="AverageHash" Bounds="306,-682,220,205" Id="LJLH7I4PxVlMKYNpNiP7y4" Summary="Calculates the perceptual hash of an image using the AverageHash algorithm" Remarks="This node is pretty heavy, so you might want to put it in a Cache region">
+            <Node Name="AverageHash" Bounds="313,-670,221,205" Id="LJLH7I4PxVlMKYNpNiP7y4" Summary="Calculates the perceptual hash of an image using the AverageHash algorithm" Remarks="This node is pretty heavy, so you might want to put it in a Cache region">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">true</p:HideCategory>
               <Patch Id="II5fmFFnDHWOFSaQXYN058">
-                <Node Bounds="320,-598,124,22" AutoConnect="true" Id="Bjjf6yGpX6POpKhwUrpUyA">
+                <Node Bounds="327,-586,124,22" AutoConnect="true" Id="Bjjf6yGpX6POpKhwUrpUyA">
                   <p:NodeReference LastCategoryFullName="DupImageLib.ImageHashes" LastSymbolSource="DupImageLib.dll">
                     <Choice Kind="OperationNode" Name="CalculateAverageHash64" />
                     <FullNameCategoryReference ID="DupImageLib.ImageHashes" />
@@ -44,7 +44,7 @@
                   <Pin Id="TUMKu8wkDqvNZ3noZUBvqC" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="GsFcZ6aUPMgM8603lwInQN" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="439,-634,48,13" Id="HBrAiSctnU2NT8ynjw3yFd">
+                <Node Bounds="446,-622,48,13" Id="HBrAiSctnU2NT8ynjw3yFd">
                   <p:NodeReference LastCategoryFullName="IO.Path" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Category" Name="IO" />
@@ -55,10 +55,10 @@
                   <Pin Id="Ka1tK45K12aOPjkJ9lw2oC" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Link Id="C8tVxnzMrL7PtM9M7YWvMF" Ids="Ka1tK45K12aOPjkJ9lw2oC,VBgQhZ12jpROCxac0noIl2" />
-                <ControlPoint Id="VBPPmFh6qtVO9AQOYYgjXT" Bounds="441,-666" />
+                <ControlPoint Id="VBPPmFh6qtVO9AQOYYgjXT" Bounds="448,-654" />
                 <Link Id="BPt7GVPFwN7ODfG3jkQObK" Ids="VBPPmFh6qtVO9AQOYYgjXT,E67RlwvLu6oQQ05VXNgXvX" />
                 <Link Id="L44mjAJnZoiQYWUcyCTNeM" Ids="FsnHtNKTT07O6hCANEUbMM,VBPPmFh6qtVO9AQOYYgjXT" IsHidden="true" />
-                <Pad Id="RoM8yp7TWvVLTobXcjqney" Comment="" Bounds="322,-528,156,62" ShowValueBox="true" isIOBox="true" />
+                <Pad Id="RoM8yp7TWvVLTobXcjqney" Comment="" Bounds="329,-516,156,62" ShowValueBox="true" isIOBox="true" />
                 <Link Id="KCLVcmhFotSMldZyPB72x3" Ids="TUMKu8wkDqvNZ3noZUBvqC,RoM8yp7TWvVLTobXcjqney" />
                 <Pin Id="UlpK3dgHrkAOXePTYhrUpj" Name="Result" Kind="OutputPin" />
                 <Pin Id="FsnHtNKTT07O6hCANEUbMM" Comment="The path to the image you want to hash" Name="Path" Kind="InputPin" Bounds="470,312" DefaultValue="{&quot;_path&quot;:&quot;vl&quot;}">
@@ -66,7 +66,7 @@
                     <Choice Kind="TypeFlag" Name="Path" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Pad Id="Q0MKGrVvO2JLD6HkaG8urt" Comment="" Bounds="323,-632,20,20" ShowValueBox="true" isIOBox="true">
+                <Pad Id="Q0MKGrVvO2JLD6HkaG8urt" Comment="" Bounds="330,-620,20,20" ShowValueBox="true" isIOBox="true">
                   <p:TypeAnnotation LastCategoryFullName="VVVV.Image.ImageHashing" LastSymbolSource="VVVV.Image.ImageHashing.vl">
                     <Choice Kind="TypeFlag" Name="ImageHashes" />
                   </p:TypeAnnotation>
@@ -295,14 +295,14 @@
     ************************ CompareHashes ************************
 
 -->
-            <Node Name="CompareHashes" Bounds="345,201,112,85" Id="S0nqib4u9IxMlw1t7nhM5F">
+            <Node Name="CompareHashes" Bounds="335,352,112,85" Id="S0nqib4u9IxMlw1t7nhM5F">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">true</p:HideCategory>
               <Patch Id="UvBrxWiLEzaMV9ElvMGVMp">
-                <Node Bounds="357,236,84,13" AutoConnect="true" Id="JswYvihbJrCNnOgaW5YG1Q">
+                <Node Bounds="347,387,84,13" AutoConnect="true" Id="JswYvihbJrCNnOgaW5YG1Q">
                   <p:NodeReference LastCategoryFullName="DupImageLib.ImageHashes" LastSymbolSource="DupImageLib.dll">
                     <Choice Kind="OperationNode" Name="CompareHashes" />
                     <FullNameCategoryReference ID="DupImageLib.ImageHashes" />
@@ -357,6 +357,60 @@
                 <Link Id="IWAmv38GrZXLLbylX9Jr4b" Ids="BX2TNvd46rFNDXlxBzWFrt,EgggWH7yhtlOY8Q4YVDtHA" IsHidden="true" />
               </Patch>
             </Node>
+            <!--
+
+    ************************ DctHash ************************
+
+-->
+            <Node Name="DctHash" Bounds="331,115,168,161" Id="EiKw2J1GXFxMwsMf1BCBIx">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">true</p:HideCategory>
+              <Patch Id="OL4GcU5J6nkQUgb5lol0BN">
+                <Node Bounds="351,193,90,22" AutoConnect="true" Id="N9SI2dW2TKHNwL4pTu6ZoP">
+                  <p:NodeReference LastCategoryFullName="DupImageLib.ImageHashes" LastSymbolSource="DupImageLib.dll">
+                    <Choice Kind="OperationNode" Name="CalculateDctHash" />
+                    <FullNameCategoryReference ID="DupImageLib.ImageHashes" />
+                    <PinReference Kind="InputPin" Name="this" />
+                    <PinReference Kind="InputPin" Name="Path" />
+                  </p:NodeReference>
+                  <Pin Id="DwVUyOrC1U8LmtVWA6mMyn" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Bueo5Ooil0oOwjbYqRq1PB" Name="Path" Kind="InputPin" />
+                  <Pin Id="PSWiODaShnjOVA2mA9S1aA" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="LY3da29FEBYO1UqKxfj2uJ" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pad Id="UZ7yy1JzKiFP0tmW7Be3Gs" Comment="" Bounds="347,170,12,19" ShowValueBox="true" isIOBox="true">
+                  <p:TypeAnnotation LastCategoryFullName="Image" LastSymbolSource="VVVV.Image.ImageHashes.vl">
+                    <Choice Kind="TypeFlag" Name="ImageHashes" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Link Id="UD5bgtBlg1lNc7SATBXdIi" Ids="UZ7yy1JzKiFP0tmW7Be3Gs,DwVUyOrC1U8LmtVWA6mMyn" />
+                <Pad Id="KB3dG0Q2RE3MhHrnPV6Gmn" Comment="" Bounds="347,247,12,19" ShowValueBox="true" isIOBox="true" />
+                <Link Id="UlJeY1ajLmGMSTFXOLG6Xd" Ids="PSWiODaShnjOVA2mA9S1aA,KB3dG0Q2RE3MhHrnPV6Gmn" />
+                <Node Bounds="439,159,48,13" Id="TEBMW07hxPzMqwBQ20iy25">
+                  <p:NodeReference LastCategoryFullName="IO.Path" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="Category" Name="IO" />
+                    <CategoryReference Kind="RecordType" Name="Path" />
+                    <Choice Kind="OperationCallFlag" Name="ToString" />
+                  </p:NodeReference>
+                  <Pin Id="UBvDtaiSO54N7IJ2qqgYVe" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="ICq6XAJpBBFQGPczYlFEEz" Name="Result" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="IGb3Zz0tF9yNFFwQQp3hdR" Bounds="440,131" />
+                <Link Id="QABvSPRPF3xOa5G2xfd0OR" Ids="IGb3Zz0tF9yNFFwQQp3hdR,UBvDtaiSO54N7IJ2qqgYVe" />
+                <Link Id="O0PMsbLBI1NQJwyXBAxU74" Ids="LDr0LM9S4QKNlxcTBIfiPn,IGb3Zz0tF9yNFFwQQp3hdR" IsHidden="true" />
+                <Pin Id="PxPutwsLqEAPMm6RF4ozMl" Name="Result" Kind="OutputPin" />
+                <Pin Id="LDr0LM9S4QKNlxcTBIfiPn" Name="Path" Kind="InputPin">
+                  <p:TypeAnnotation>
+                    <Choice Kind="TypeFlag" Name="Path" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Link Id="Ulz32LGFGqvLtg7Rc5CPoU" Ids="ICq6XAJpBBFQGPczYlFEEz,Bueo5Ooil0oOwjbYqRq1PB" />
+              </Patch>
+            </Node>
           </Canvas>
           <ProcessDefinition Id="RiznP5KwAtbNFrZg9t3DAK" IsHidden="true">
             <Fragment Id="C7KYddCNoaDQAtj7bYUkhj" Patch="NwUPLgcToRoN3c5cce3m8P" Enabled="true" />
@@ -366,6 +420,7 @@
             <Fragment Id="SLEiXJDVXgGLDmGvhT9ou8" Patch="Rrbp5Fr5gPXLliXACspfZa" />
             <Fragment Id="GWY8scODda8PzLLAWfFezY" Patch="S0nqib4u9IxMlw1t7nhM5F" />
             <Fragment Id="IuePh7KwdFbMGZGQ4WCBhM" Patch="LJLH7I4PxVlMKYNpNiP7y4" />
+            <Fragment Id="Lr44GJdRZVgN9e5sFLov09" Patch="EiKw2J1GXFxMwsMf1BCBIx" />
           </ProcessDefinition>
         </Patch>
       </Node>
