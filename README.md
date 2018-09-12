@@ -13,7 +13,7 @@ Here are a few interesting articles on image perceptual hash in case you're inte
 
 # What's inside
 
-You can use AverageHash, MedianHash and DifferenceHash algorithms. Some are quicker but give less pertient results, while others are slower but more accurate. They all take a _Path_ to an image as an input (Stream is also possible but not implemented yet).
+You can use AverageHash, MedianHash, DifferenceHash and DctHash algorithms (more informations about those can be found on DupImageLib's repo'). Some are quicker but give less pertient results, while others are slower but more accurate. They all take a _Path_ to an image as an input (Stream is also possible but not implemented yet).
 
 # Usage
 
