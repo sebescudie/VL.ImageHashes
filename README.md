@@ -17,7 +17,9 @@ You can use AverageHash, MedianHash, DifferenceHash and DctHash algorithms (more
 
 # Usage
 
-This library uses a native dll as dependency, so VL won't be able to load it automatically (see Graybook [here](https://vvvv.gitbooks.io/the-gray-book/content/en/reference/libraries/dependencies.html)). Open `root.v4p`, it contains a VL plugin that uses VL.ImageHashes as a dependency.
+This library uses a native dll as dependency, so VL won't be able to load it automatically (see Graybook [here](https://vvvv.gitbooks.io/the-gray-book/content/en/reference/libraries/dependencies.html)). You'll have to create a batch file that adds the path to that dll in VL's search paths and start vvvv with it.
+
+Then, open `root.v4p`. It contains a VL plugin that uses VL.ImageHashes as a dependency.
 
 # Next step
 
