@@ -25,7 +25,7 @@
     ************************ AverageHash ************************
 
 -->
-            <Node Name="AverageHash" Bounds="313,-670,221,205" Id="LJLH7I4PxVlMKYNpNiP7y4" Summary="Calculates the perceptual hash of an image using the AverageHash algorithm" Remarks="This node is pretty heavy, so you might want to put it in a Cache region">
+            <Node Name="AverageHash" Bounds="313,-670,221,205" Id="LJLH7I4PxVlMKYNpNiP7y4" Summary="Calculates a 64 bit hash for the given image using average algorithm." Tags="perceptual,hash">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -60,8 +60,8 @@
                 <Link Id="L44mjAJnZoiQYWUcyCTNeM" Ids="FsnHtNKTT07O6hCANEUbMM,VBPPmFh6qtVO9AQOYYgjXT" IsHidden="true" />
                 <Pad Id="RoM8yp7TWvVLTobXcjqney" Comment="" Bounds="329,-516,156,62" ShowValueBox="true" isIOBox="true" />
                 <Link Id="KCLVcmhFotSMldZyPB72x3" Ids="TUMKu8wkDqvNZ3noZUBvqC,RoM8yp7TWvVLTobXcjqney" />
-                <Pin Id="UlpK3dgHrkAOXePTYhrUpj" Name="Result" Kind="OutputPin" />
-                <Pin Id="FsnHtNKTT07O6hCANEUbMM" Comment="The path to the image you want to hash" Name="Path" Kind="InputPin" Bounds="470,312" DefaultValue="{&quot;_path&quot;:&quot;vl&quot;}">
+                <Pin Id="UlpK3dgHrkAOXePTYhrUpj" Comment="64 bit average hash of the input image." Name="Result" Kind="OutputPin" />
+                <Pin Id="FsnHtNKTT07O6hCANEUbMM" Comment="Path to an image to be hashed." Name="Path" Kind="InputPin" Bounds="470,312" DefaultValue="{&quot;_path&quot;:&quot;vl&quot;}">
                   <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Path" />
                   </p:TypeAnnotation>
@@ -79,7 +79,7 @@
     ************************ DifferenceHash256 ************************
 
 -->
-            <Node Name="DifferenceHash256" Bounds="324,-114,217,179" Id="CbXJO70LKGpLlVkBGOkLPk">
+            <Node Name="DifferenceHash256" Bounds="324,-114,217,179" Id="CbXJO70LKGpLlVkBGOkLPk" Summary="Calculates 256 bit hash for the given image using difference hash." Remarks="See http://www.hackerfactor.com/blog/index.php?/archives/529-Kind-of-Like-That.html for algorithm description." Tags="perceptual,hash">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -98,7 +98,7 @@
                   <Pin Id="Ln9TglQBktBOnaTcZBQOAi" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="E2GiqcKEWeoO2W09D5AjPG" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Pin Id="P0zPZ21TAjSM4zBiMMmXoS" Name="Result" Kind="OutputPin" />
+                <Pin Id="P0zPZ21TAjSM4zBiMMmXoS" Comment="256 bit difference hash of the input image." Name="Result" Kind="OutputPin" />
                 <Pad Id="IsTEX46e59rLMOLqUAlLOS" Comment="" Bounds="340,-46,12,19" ShowValueBox="true" isIOBox="true">
                   <p:TypeAnnotation LastCategoryFullName="VVVV.Image.ImageHashing" LastSymbolSource="VVVV.Image.ImageHashing.vl">
                     <Choice Kind="TypeFlag" Name="ImageHashes" />
@@ -118,7 +118,7 @@
                   <Pin Id="SrZZBnuZvfQN31CnyHBFSl" Name="Result" Kind="OutputPin" />
                 </Node>
                 <ControlPoint Id="NDdONXv0gt4NNHaslwCoe5" Bounds="482,-85" />
-                <Pin Id="L9lIkBMO4mBPOcGZWr82cS" Name="Path" Kind="InputPin" Bounds="470,312" DefaultValue="{&quot;_path&quot;:&quot;vl&quot;}">
+                <Pin Id="L9lIkBMO4mBPOcGZWr82cS" Comment="Path to an image to be hashed." Name="Path" Kind="InputPin" Bounds="470,312" DefaultValue="{&quot;_path&quot;:&quot;vl&quot;}">
                   <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Path" />
                   </p:TypeAnnotation>
@@ -133,7 +133,7 @@
     ************************ DifferenceHash64 ************************
 
 -->
-            <Node Name="DifferenceHash64" Bounds="585,-114,202,176" Id="FT5MBPYbm8nOWLon0SXJZM">
+            <Node Name="DifferenceHash64" Bounds="585,-114,202,176" Id="FT5MBPYbm8nOWLon0SXJZM" Summary="Calculates 64 bit hash for the given image using difference hash." Remarks="See http://www.hackerfactor.com/blog/index.php?/archives/529-Kind-of-Like-That.html for algorithm description." Tags="perceptual,hash">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -152,7 +152,7 @@
                   <Pin Id="Cn8HJTqGA3sN5RWSX7vao9" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="JVqKW6NVBLwQE7SfCS1pfs" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Pin Id="RFexRNPBAJSQAXkTkAQF7h" Name="Result" Kind="OutputPin" />
+                <Pin Id="RFexRNPBAJSQAXkTkAQF7h" Comment="64 bit difference hash of the input image." Name="Result" Kind="OutputPin" />
                 <Pad Id="E6Dx5v0HYdAN8TYbZTrxZK" Comment="" Bounds="602,-46,12,19" ShowValueBox="true" isIOBox="true">
                   <p:TypeAnnotation LastCategoryFullName="VVVV.Image.ImageHashing" LastSymbolSource="VVVV.Image.ImageHashing.vl">
                     <Choice Kind="TypeFlag" Name="ImageHashes" />
@@ -172,7 +172,7 @@
                   <Pin Id="UbWjxSdFDZBMii4jexGm6V" Name="Result" Kind="OutputPin" />
                 </Node>
                 <ControlPoint Id="CCn9OfUNDeFNazwOOm3dmU" Bounds="728,-82" />
-                <Pin Id="DY7NVs1FS8TOrLPflZpz0A" Name="Path" Kind="InputPin" Bounds="470,312" DefaultValue="{&quot;_path&quot;:&quot;vl&quot;}">
+                <Pin Id="DY7NVs1FS8TOrLPflZpz0A" Comment="Path to an image to be hashed." Name="Path" Kind="InputPin" Bounds="470,312" DefaultValue="{&quot;_path&quot;:&quot;vl&quot;}">
                   <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Path" />
                   </p:TypeAnnotation>
@@ -187,7 +187,7 @@
     ************************ MedianHash64 ************************
 
 -->
-            <Node Name="MedianHash64" Bounds="313,-409,202,174" Id="M8lZ7oGkNfSMO55Qrl4dhE">
+            <Node Name="MedianHash64" Bounds="313,-409,202,174" Id="M8lZ7oGkNfSMO55Qrl4dhE" Summary="Calculates a 64 bit hash for the given image using median algorithm." Remarks="Works by converting the image to 8x8 greyscale image, finding the median pixel value from it, and then marking all pixels where value is greater than median value as 1 in the resulting hash. Should be more resistant to non-linear image edits when compared agains average based implementation." Tags="perceptual,hash">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -206,7 +206,7 @@
                   <Pin Id="OK2SdHndIuYPFrE7H1s0GI" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="DSPMwKoAyiLNcSJGMFQlDq" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Pin Id="VsLsh476WsrQARpbB8k0wO" Name="Result" Kind="OutputPin" />
+                <Pin Id="VsLsh476WsrQARpbB8k0wO" Comment="64 bit median hash of the input image." Name="Result" Kind="OutputPin" />
                 <Pad Id="GViJ9AEB27zNyvO4fbL6LE" Comment="" Bounds="329,-336,12,19" ShowValueBox="true" isIOBox="true">
                   <p:TypeAnnotation LastCategoryFullName="VVVV.Image.ImageHashing" LastSymbolSource="VVVV.Image.ImageHashing.vl">
                     <Choice Kind="TypeFlag" Name="ImageHashes" />
@@ -226,7 +226,7 @@
                   <Pin Id="UBDkpuuaMGVNktc67ApKBI" Name="Result" Kind="OutputPin" />
                 </Node>
                 <ControlPoint Id="GSO3xA0cKEDOmK07iaoaNy" Bounds="456,-371" />
-                <Pin Id="IK0e4EDlhymNK2o4acbQcd" Name="Path" Kind="InputPin" Bounds="470,312" DefaultValue="{&quot;_path&quot;:&quot;vl&quot;}">
+                <Pin Id="IK0e4EDlhymNK2o4acbQcd" Comment="Path to an image to be hashed." Name="Path" Kind="InputPin" Bounds="470,312" DefaultValue="{&quot;_path&quot;:&quot;vl&quot;}">
                   <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Path" />
                   </p:TypeAnnotation>
@@ -241,14 +241,14 @@
     ************************ MedianHash256 ************************
 
 -->
-            <Node Name="MedianHash256" Bounds="582,-398,202,139" Id="Rrbp5Fr5gPXLliXACspfZa">
+            <Node Name="MedianHash256" Bounds="574,-393,202,140" Id="Rrbp5Fr5gPXLliXACspfZa" Summary="Calculates a 256 bit hash for the given image using median algorithm." Remarks="Works by converting the image to 16x16 greyscale image, finding the median pixel value from it, and then marking all pixels where value is greater than median value as 1 in the resulting hash. Should be more resistant to non-linear image edits when compared agains average based implementation." Tags="perceptual,hash">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">true</p:HideCategory>
               <Patch Id="QMpND1YEZDlNFie0nZ1qrD">
-                <Node Bounds="599,-326,126,22" AutoConnect="true" Id="MnlexmUA6r0M35IhBOwTCC">
+                <Node Bounds="591,-321,126,22" AutoConnect="true" Id="MnlexmUA6r0M35IhBOwTCC">
                   <p:NodeReference LastCategoryFullName="DupImageLib.ImageHashes" LastSymbolSource="DupImageLib.dll">
                     <Choice Kind="OperationNode" Name="CalculateMedianHash256" />
                     <FullNameCategoryReference ID="DupImageLib.ImageHashes" />
@@ -260,16 +260,16 @@
                   <Pin Id="D53MyVgY3eFMoXPnuh0DXT" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="UEBM8tnplM8Nh7vSUJR6x2" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Pin Id="AogB4DAaWfbNVY6FFzb8Y0" Name="Result" Kind="OutputPin" />
-                <Pad Id="M2CtwolmcduLM1bPbGMQW7" Comment="" Bounds="598,-340,12,19" ShowValueBox="true" isIOBox="true">
+                <Pin Id="AogB4DAaWfbNVY6FFzb8Y0" Comment="256 bit median hash of the input image. Composed of 4 ulongs." Name="Result" Kind="OutputPin" />
+                <Pad Id="M2CtwolmcduLM1bPbGMQW7" Comment="" Bounds="590,-335,12,19" ShowValueBox="true" isIOBox="true">
                   <p:TypeAnnotation LastCategoryFullName="VVVV.Image.ImageHashing" LastSymbolSource="VVVV.Image.ImageHashing.vl">
                     <Choice Kind="TypeFlag" Name="ImageHashes" />
                   </p:TypeAnnotation>
                 </Pad>
                 <Link Id="JWR0TD80IXSOZFAoKMJgol" Ids="M2CtwolmcduLM1bPbGMQW7,I95vj5gmKh4PbjuDm47xgN" />
-                <Pad Id="MGIbaIPymiSLAvdZ6MpfV0" Comment="" Bounds="600,-288,12,19" ShowValueBox="true" isIOBox="true" />
+                <Pad Id="MGIbaIPymiSLAvdZ6MpfV0" Comment="" Bounds="592,-283,12,19" ShowValueBox="true" isIOBox="true" />
                 <Link Id="PVp387BHMhhQXfnMjjkuDD" Ids="D53MyVgY3eFMoXPnuh0DXT,MGIbaIPymiSLAvdZ6MpfV0" />
-                <Node Bounds="724,-354,48,13" Id="Lim4SiTuBqQN5R2Kwe37gd">
+                <Node Bounds="716,-349,48,13" Id="Lim4SiTuBqQN5R2Kwe37gd">
                   <p:NodeReference LastCategoryFullName="IO.Path" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Category" Name="IO" />
@@ -279,8 +279,8 @@
                   <Pin Id="I4BhDES5UcdO2BfeCeqBYG" Name="Input" Kind="StateInputPin" />
                   <Pin Id="O2mws6mU51MNlRaPB77LFQ" Name="Result" Kind="OutputPin" />
                 </Node>
-                <ControlPoint Id="KB3ibjJWE1mPaWES835EPJ" Bounds="725,-382" />
-                <Pin Id="Op7e1BnFgWHPBPaBl240W0" Name="Path" Kind="InputPin" Bounds="470,312" DefaultValue="{&quot;_path&quot;:&quot;vl&quot;}">
+                <ControlPoint Id="KB3ibjJWE1mPaWES835EPJ" Bounds="717,-377" />
+                <Pin Id="Op7e1BnFgWHPBPaBl240W0" Comment="Path to an image to be hashed." Name="Path" Kind="InputPin" Bounds="470,312" DefaultValue="{&quot;_path&quot;:&quot;vl&quot;}">
                   <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Path" />
                   </p:TypeAnnotation>
@@ -295,7 +295,7 @@
     ************************ CompareHashes ************************
 
 -->
-            <Node Name="CompareHashes" Bounds="335,352,112,85" Id="S0nqib4u9IxMlw1t7nhM5F">
+            <Node Name="CompareHashes" Bounds="335,352,112,85" Id="S0nqib4u9IxMlw1t7nhM5F" Summary="Compare hashes of two images using Hamming distance. Result of 1 indicates images being same, while result of 0 indicates completely different images." Tags="perceptual,hash">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -316,9 +316,9 @@
                   <Pin Id="VNieq3n9qOMPtQlaMwIvPd" Name="Hash 2" Kind="InputPin" />
                   <Pin Id="VfJck7CRYf0PuTF601yVlb" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Pin Id="HNOLFFPtJOVQVCXwm9ROzG" Name="Hash 1" Kind="InputPin" />
-                <Pin Id="Uk8s8EtjFQYQRseBQa6dpj" Name="Hash 2" Kind="InputPin" />
-                <Pin Id="FASaJgGL4lpMQcW3bc35uS" Name="Result" Kind="OutputPin" />
+                <Pin Id="HNOLFFPtJOVQVCXwm9ROzG" Comment="First hash to be compared" Name="Hash 1" Kind="InputPin" />
+                <Pin Id="Uk8s8EtjFQYQRseBQa6dpj" Comment="Second hash to be compared" Name="Hash 2" Kind="InputPin" />
+                <Pin Id="FASaJgGL4lpMQcW3bc35uS" Comment="Image similarity in range [0,1]" Name="Result" Kind="OutputPin" />
               </Patch>
             </Node>
             <!--
@@ -362,7 +362,7 @@
     ************************ DctHash ************************
 
 -->
-            <Node Name="DctHash" Bounds="331,115,168,161" Id="EiKw2J1GXFxMwsMf1BCBIx">
+            <Node Name="DctHash" Bounds="331,115,168,161" Id="EiKw2J1GXFxMwsMf1BCBIx" Summary="Calculates a hash for the given image using dct algorithm" Tags="perceptual,hash">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -403,7 +403,7 @@
                 <Link Id="QABvSPRPF3xOa5G2xfd0OR" Ids="IGb3Zz0tF9yNFFwQQp3hdR,UBvDtaiSO54N7IJ2qqgYVe" />
                 <Link Id="O0PMsbLBI1NQJwyXBAxU74" Ids="LDr0LM9S4QKNlxcTBIfiPn,IGb3Zz0tF9yNFFwQQp3hdR" IsHidden="true" />
                 <Pin Id="PxPutwsLqEAPMm6RF4ozMl" Name="Result" Kind="OutputPin" />
-                <Pin Id="LDr0LM9S4QKNlxcTBIfiPn" Name="Path" Kind="InputPin">
+                <Pin Id="LDr0LM9S4QKNlxcTBIfiPn" Comment="Path to the image used for hash calculation." Name="Path" Kind="InputPin">
                   <p:TypeAnnotation>
                     <Choice Kind="TypeFlag" Name="Path" />
                   </p:TypeAnnotation>
